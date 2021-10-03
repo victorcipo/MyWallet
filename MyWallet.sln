@@ -3,9 +3,55 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{920BF8D0-DA15-4461-AD12-96E775602C55}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{D831F647-CAD5-407F-A8F5-593BEE12D62B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{2447E8B1-E514-4A5D-8327-89BD169949CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - CrossCutting", "4 - CrossCutting", "{4550AD64-6B9B-4480-B632-62F4F5F18EE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{336F4E3F-6EDB-4AEF-BA6C-B1020FFB6EF8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWallet.Api", "MyWallet.Api\MyWallet.Api.csproj", "{9F361C7F-A29E-49AA-BEB8-DA15CA7CB74C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWallet.Infrastructure.Data.MongoDb", "MyWallet.Infrastructure.Data.MongoDb\MyWallet.Infrastructure.Data.MongoDb.csproj", "{AA46DE7A-ACBF-499B-AA15-EE135CFE8237}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWallet.CrossCutting.Configuration", "MyWallet.CrossCutting.Configuration\MyWallet.CrossCutting.Configuration.csproj", "{573680FF-87B6-4F96-AF61-26C0EE746E7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWallet.Infrastructure.Data.Quey", "MyWallet.Infrastructure.Data.Quey\MyWallet.Infrastructure.Data.Quey.csproj", "{64A09EF1-ECD3-4CEF-9199-8DEC85231E0E}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F361C7F-A29E-49AA-BEB8-DA15CA7CB74C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F361C7F-A29E-49AA-BEB8-DA15CA7CB74C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F361C7F-A29E-49AA-BEB8-DA15CA7CB74C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F361C7F-A29E-49AA-BEB8-DA15CA7CB74C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA46DE7A-ACBF-499B-AA15-EE135CFE8237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA46DE7A-ACBF-499B-AA15-EE135CFE8237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA46DE7A-ACBF-499B-AA15-EE135CFE8237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA46DE7A-ACBF-499B-AA15-EE135CFE8237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{573680FF-87B6-4F96-AF61-26C0EE746E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{573680FF-87B6-4F96-AF61-26C0EE746E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{573680FF-87B6-4F96-AF61-26C0EE746E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{573680FF-87B6-4F96-AF61-26C0EE746E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A09EF1-ECD3-4CEF-9199-8DEC85231E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A09EF1-ECD3-4CEF-9199-8DEC85231E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A09EF1-ECD3-4CEF-9199-8DEC85231E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A09EF1-ECD3-4CEF-9199-8DEC85231E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F361C7F-A29E-49AA-BEB8-DA15CA7CB74C} = {920BF8D0-DA15-4461-AD12-96E775602C55}
+		{AA46DE7A-ACBF-499B-AA15-EE135CFE8237} = {2447E8B1-E514-4A5D-8327-89BD169949CE}
+		{573680FF-87B6-4F96-AF61-26C0EE746E7E} = {4550AD64-6B9B-4480-B632-62F4F5F18EE5}
+		{64A09EF1-ECD3-4CEF-9199-8DEC85231E0E} = {2447E8B1-E514-4A5D-8327-89BD169949CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4ED1ADE0-4120-43F9-A04D-9F454C14C51F}
